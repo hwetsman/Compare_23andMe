@@ -65,8 +65,6 @@ print(df)
 symbol = 'MTHFR'
 
 # get start and stop for that gene
-
-
 gene_data = Get_Gene(symbol)
 if gene_data == None:
     print(f"I'm sorry. I can find nothing on {symbol} right now")
@@ -74,9 +72,10 @@ else:
     chrom = list(Find_Keys(gene_data,'seq_region_name'))[0]
     start = list(Find_Keys(gene_data,'start'))[0]
     end = max(list(Find_Keys(gene_data,'end')))
-    print(chrom,start,end)
+
 
 # print(chrom,start, end)
+print(chrom,start,end)
 
 #filter df for that gene
 
