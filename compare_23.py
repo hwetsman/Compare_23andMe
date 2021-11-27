@@ -79,8 +79,9 @@ print(type(chrom),type(start),type(end))
 print(type(df.loc[0,'chromosome']))
 
 #filter df for that gene
-df =df[df.chromosome == chrom]
+df =df[(df.chromosome == chrom) & (df.position <= end) & (df.position >= start)]
 print(df)
+
 #get frequency data for those SNPs
 
 #present comparison to the person
