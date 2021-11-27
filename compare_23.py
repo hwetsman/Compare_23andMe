@@ -34,8 +34,10 @@ def Get_Gene(symbol):
     decoded = r.json()
     return decoded
 
+#input sample
 sample = 'genome_Mickey_Mouse_v2_v3_Full.txt'
 
+# get 23andme data from sample file
 header = Get_Header(sample)
 df = pd.read_csv(sample,header=header,sep='\t')
 print(df)
