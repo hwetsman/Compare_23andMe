@@ -58,7 +58,7 @@ sample = 'genome_Mickey_Mouse_v2_v3_Full.txt'
 
 # get 23andme data from sample file
 header = Get_Header(sample)
-df = pd.read_csv(sample,header=header,sep='\t')
+df = pd.read_csv(sample,header=header,sep='\t',dtype={'# rsid':str,'chromosome':str,'position':int,'genotype':str})
 print(df)
 
 #allow user to pick a gene
@@ -73,12 +73,14 @@ else:
     start = list(Find_Keys(gene_data,'start'))[0]
     end = max(list(Find_Keys(gene_data,'end')))
 
-
 # print(chrom,start, end)
 print(chrom,start,end)
+print(type(chrom),type(start),type(end))
+print(type(df.loc[0,'chromosome']))
 
 #filter df for that gene
-
+df =df[df.chromosome == chrom]
+print(df)
 #get frequency data for those SNPs
 
 #present comparison to the person
