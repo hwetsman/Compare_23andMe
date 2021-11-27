@@ -8,9 +8,11 @@ Aims: To allow an individual user to compare data on their 23andMe report to the
 the 1000genomes project.
 Contributions and credits:
 Ensembl API documentation http://grch37.rest.ensembl.org/documentation/info/symbol_lookup
+Chris Vaccaro for findkeys https://github.com/ChrisVaccaro
 """
 import pandas as pd
 import requests
+import json
 
 def Get_Header(file):
     with open(file, 'r') as f:
@@ -34,6 +36,23 @@ def Get_Gene(symbol):
     decoded = r.json()
     return decoded
 
+
+def Find_Keys(node, kv):
+    """
+    derived from original code by Chris Vaccaro
+    """
+    if isinstance(node, list):
+        for i in node:
+            for x in Find_Keys(i, kv):
+                yield x
+    elif isinstance(node, dict):
+        if kv in node:
+            yield node[kv]
+        for j in node.values():
+            for x in Find_Keys(j, kv):
+                yield x
+
+
 #input sample
 sample = 'genome_Mickey_Mouse_v2_v3_Full.txt'
 
@@ -52,8 +71,12 @@ gene_data = Get_Gene(symbol)
 if gene_data == None:
     print(f"I'm sorry. I can find nothing on {symbol} right now")
 else:
-    print(gene_data)
+    chrom = list(Find_Keys(gene_data,'seq_region_name'))[0]
+    start = list(Find_Keys(gene_data,'start'))[0]
+    end = max(list(Find_Keys(gene_data,'end')))
+    print(chrom,start,end)
 
+# print(chrom,start, end)
 
 #filter df for that gene
 
