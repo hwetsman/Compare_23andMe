@@ -85,42 +85,51 @@ print(df)
 #get frequency data for those SNPs
 
 
-def Get_Ref_Alt(rsid):
+def Get_Ref_Alt(snp):
     with open('frequency_table.tsv') as f:
         for i in range(9):
             line = f.readline()
-            print(line)
+            # print(line)
             if 'Alleles' in line:
                 if '/' in line:
                     alleles = line.split('\t')[1].split('/')[0]
                 else:
                     alleles = line.split('\t')[1]
-                print(alleles)
+                # print(alleles)
                 ref,alt = alleles.split('>')
-                df.loc[snp,'ref'] = ref
-                df.loc[snp,'alt'] = alt.strip()
+    return ref,alt.strip()
 
-
-
-
+def Get_Freq(snp):
+    freq_df = pd.read_csv(destination,sep='\t',header=12)
+    print(freq_df)
+    global_alt = freq_df.loc[0,'Alt Allele'].split('=')[1]
+    return global_alt
 
 
 snps = df['# rsid'].tolist()
 df.set_index('# rsid',inplace=True,drop=True)
 print(f"There is data on {len(snps)} SNPs in your report from {symbol}.")
 for snp in snps:
+    print('\n',snp)
     print(f"Dowloading Frequency table for {snp}. This will take awhile...")
     import urllib.request
     url = f"https://www.ncbi.nlm.nih.gov/snp/{snp}/download/frequency"
     destination = "frequency_table.tsv"
     # freq_filename = str(rsid)
     urllib.request.urlretrieve(url, destination)
-    Get_Ref_Alt(snp)
-    # freq_df = pd.read_csv(destination,sep='\t',header=12)
-    # print(freq_df)
-    print(df.head())
+    try:
+        df.loc[snp,'alt_freq'] = Get_Freq(snp)
+        ref,alt = Get_Ref_Alt(snp)
+        df.loc[snp,'ref'] = ref
+        df.loc[snp,'alt'] = alt
+    except:
+         ref,alt = Get_Ref_Alt(snp)
+         df.loc[snp,'ref'] = ref
+         df.loc[snp,'alt'] = alt
+
 
 #present comparison to the person
+print(df)
 
 
 
