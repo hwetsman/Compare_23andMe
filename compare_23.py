@@ -59,12 +59,12 @@ sample = 'genome_Mickey_Mouse_v2_v3_Full.txt'
 # get 23andme data from sample file
 header = Get_Header(sample)
 df = pd.read_csv(sample,header=header,sep='\t',dtype={'# rsid':str,'chromosome':str,'position':int,'genotype':str})
-print(df)
 
 #allow user to pick a gene
 symbol = 'MTHFR'
 
 # get start and stop for that gene
+print(f"Looking for data on {symbol}... ")
 gene_data = Get_Gene(symbol)
 if gene_data == None:
     print(f"I'm sorry. I can find nothing on {symbol} right now")
@@ -74,9 +74,8 @@ else:
     end = max(list(Find_Keys(gene_data,'end')))
 
 # print(chrom,start, end)
-print(chrom,start,end)
-print(type(chrom),type(start),type(end))
-print(type(df.loc[0,'chromosome']))
+print(f"The gene you're looking for is on chromosome {chrom} and goes from position {start} to position {end}")
+
 
 #filter df for that gene and no calls
 df =df[(df.chromosome == chrom) & (df.position <= end) & (df.position >= start)]
@@ -84,8 +83,9 @@ df = df[df.genotype != '--']
 df = df[~df['# rsid'].str.contains('i')]
 print(df)
 
-
 #get frequency data for those SNPs
+# snps = df['# rsid'].tolist()
+# print(snps)
 
 #present comparison to the person
 
