@@ -13,6 +13,7 @@ Chris Vaccaro for findkeys https://github.com/ChrisVaccaro
 import pandas as pd
 import requests
 import json
+import urllib.request
 
 def Get_Header(file):
     with open(file, 'r') as f:
@@ -112,7 +113,7 @@ print(f"There is data on {len(snps)} SNPs in your report from {symbol}.")
 for snp in snps:
     print('\n',snp)
     print(f"Dowloading Frequency table for {snp}. This will take awhile...")
-    import urllib.request
+
     url = f"https://www.ncbi.nlm.nih.gov/snp/{snp}/download/frequency"
     destination = "frequency_table.tsv"
     # freq_filename = str(rsid)
