@@ -107,10 +107,9 @@ print(df)
 snps = df['# rsid'].tolist()
 df.set_index('# rsid',inplace=True,drop=True)
 print(f"There is data on {len(snps)} SNPs in your report from {symbol}.")
+print('It takes a few seconds per SNP:')
 for snp in snps:
     print('\n',snp)
-    print(f"Dowloading Frequency table for {snp}. This will take awhile...")
-
     url = f"https://www.ncbi.nlm.nih.gov/snp/{snp}/download/frequency"
     destination = "frequency_table.tsv"
     # freq_filename = str(rsid)
