@@ -70,7 +70,6 @@ def Get_Ref_Alt(snp):
 
 def Get_Freq(snp):
     freq_df = pd.read_csv(destination,sep='\t',header=12)
-    print(freq_df)
     global_alt = freq_df.loc[0,'Alt Allele'].split('=')[1]
     return global_alt
 
