@@ -1,54 +1,69 @@
-#URL	https://www.ncbi.nlm.nih.gov/snp/rs1537515/download/frequency
-#NCBI Reference SNP (rs) Report ALPHA	rs1537515
+#URL	https://www.ncbi.nlm.nih.gov/snp/rs3737965/download/frequency
+#NCBI Reference SNP (rs) Report ALPHA	rs3737965
 #Current Build	155
 #Released	April 26, 2021
 #Organism	Homo sapiens
-#Position	chr1:11787845 (GRCh38.p13)
-#Alleles	C>A
+#Position	chr1:11806394 (GRCh38.p13)
+#Alleles	G>A
 #Variation Type	SNV (Single Nucleotide Variation)
-#Publications	1 citation
+#Publications	8 citations
 #
 #Frequency Data Table
 #################
 #Study	Population	Group	Samplesize	Ref Allele	Alt Allele	BioProject ID	BioSample ID
-TopMed	Global	Study-wide	264690	C=0.912256	A=0.087744	PRJNA400167	
-gnomAD - Genomes	Global	Study-wide	140176	C=0.906254	A=0.093746	PRJNA398795	SAMN07488253
-gnomAD - Genomes	European	Sub	75898	C=0.89290	A=0.10710		SAMN10181265
-gnomAD - Genomes	African	Sub	42016	C=0.91870	A=0.08130		SAMN07488254
-gnomAD - Genomes	American	Sub	13656	C=0.93366	A=0.06634		SAMN07488255
-gnomAD - Genomes	Ashkenazi Jewish	Sub	3322	C=0.9669	A=0.0331		SAMN07488252
-gnomAD - Genomes	East Asian	Sub	3130	C=0.8732	A=0.1268		SAMN07488251
-gnomAD - Genomes	Other	Sub	2154	C=0.9150	A=0.0850		SAMN07488248
-gnomAD - Exomes	Global	Study-wide	80722	C=0.89719	A=0.10281	PRJNA398795	SAMN07488253
-gnomAD - Exomes	European	Sub	44230	C=0.89532	A=0.10468		SAMN10181265
-gnomAD - Exomes	Asian	Sub	14946	C=0.85167	A=0.14833		
-gnomAD - Exomes	American	Sub	11076	C=0.93391	A=0.06609		SAMN07488255
-gnomAD - Exomes	African	Sub	6034	C=0.9289	A=0.0711		SAMN07488254
-gnomAD - Exomes	Other	Sub	2370	C=0.9089	A=0.0911		SAMN07488248
-gnomAD - Exomes	Ashkenazi Jewish	Sub	2066	C=0.9637	A=0.0363		SAMN07488252
-8.3KJPN	JAPANESE	Study-wide	16760	C=0.90895	A=0.09105	PRJNA678214	SAMN16789458
-ExAC	Global	Study-wide	6298	C=0.8841	A=0.1159	PRJEB8661	SAMN07490465
-ExAC	Europe	Sub	4570	C=0.8880	A=0.1120		
-ExAC	African	Sub	780	C=0.915	A=0.085		
-ExAC	Asian	Sub	664	C=0.803	A=0.197		
-ExAC	American	Sub	200	C=0.940	A=0.060		
-ExAC	Other	Sub	84	C=0.89	A=0.11		SAMN07486028
-1000Genomes	Global	Study-wide	5008	C=0.8890	A=0.1110	PRJEB6930	SAMN07490465
-1000Genomes	African	Sub	1322	C=0.9357	A=0.0643		SAMN07486022
-1000Genomes	East Asian	Sub	1008	C=0.8810	A=0.1190		SAMN07486024
-1000Genomes	Europe	Sub	1006	C=0.8976	A=0.1024		SAMN07488239
-1000Genomes	South Asian	Sub	978	C=0.783	A=0.217		SAMN07486027
-1000Genomes	American	Sub	694	C=0.948	A=0.052		SAMN07488242
-Genetic variation in the Estonian population	Estonian	Study-wide	4480	C=0.8877	A=0.1123	PRJNA489787	
-The Avon Longitudinal Study of Parents and Children	PARENT AND CHILD COHORT	Study-wide	3854	C=0.8918	A=0.1082	PRJEB7217	
-UK 10K study - Twins	TWIN COHORT	Study-wide	3708	C=0.8894	A=0.1106	PRJEB7218	
-KOREAN population from KRGDB	KOREAN	Study-wide	2922	C=0.9093	A=0.0907	PRJNA589833	
-Korean Genome Project	KOREAN	Study-wide	1832	C=0.9105	A=0.0895	PRJNA609628	
-Genome of the Netherlands Release 5	Genome of the Netherlands	Study-wide	998	C=0.894	A=0.106	PRJEB5829	SAMN13000132
-Northern Sweden	ACPOP	Study-wide	600	C=0.900	A=0.100	PPRJNA503394	SAMN10359154
-Medical Genome Project healthy controls from Spanish population	Spanish controls	Study-wide	534	C=0.934	A=0.066	PRJEB8705	SAMN13001620
-Qatari	Global	Study-wide	216	C=0.949	A=0.051	PRJNA288297	SAMN13019808
-A Vietnamese Genetic Variation Database	Global	Study-wide	214	C=0.794	A=0.206	PRJNA515199	SAMN10744005
-SGDP_PRJ	Global	Study-wide	106	C=0.462	A=0.538	PRJNA586841	
-The Danish reference pan genome	Danish	Study-wide	40	C=0.80	A=0.20	PRJEB7725	SAMN13003120
-Siberian	Global	Study-wide	16	C=0.50	A=0.50	PRJNA267856	SAMN13113809
+TopMed	Global	Study-wide	264690	G=0.956697	A=0.043303	PRJNA400167	
+gnomAD - Genomes	Global	Study-wide	140126	G=0.959793	A=0.040207	PRJNA398795	SAMN07488253
+gnomAD - Genomes	European	Sub	75890	G=0.95798	A=0.04202		SAMN10181265
+gnomAD - Genomes	African	Sub	41982	G=0.96915	A=0.03085		SAMN07488254
+gnomAD - Genomes	American	Sub	13654	G=0.95723	A=0.04277		SAMN07488255
+gnomAD - Genomes	Ashkenazi Jewish	Sub	3322	G=0.9831	A=0.0169		SAMN07488252
+gnomAD - Genomes	East Asian	Sub	3124	G=0.8697	A=0.1303		SAMN07488251
+gnomAD - Genomes	Other	Sub	2154	G=0.9522	A=0.0478		SAMN07488248
+gnomAD - Exomes	Global	Study-wide	71084	G=0.94971	A=0.05029	PRJNA398795	SAMN07488253
+gnomAD - Exomes	European	Sub	42806	G=0.95998	A=0.04002		SAMN10181265
+gnomAD - Exomes	Asian	Sub	14814	G=0.90192	A=0.09808		
+gnomAD - Exomes	Ashkenazi Jewish	Sub	5096	G=0.9829	A=0.0171		SAMN07488252
+gnomAD - Exomes	American	Sub	4338	G=0.9590	A=0.0410		SAMN07488255
+gnomAD - Exomes	African	Sub	2274	G=0.9666	A=0.0334		SAMN07488254
+gnomAD - Exomes	Other	Sub	1756	G=0.9613	A=0.0387		SAMN07488248
+Allele Frequency Aggregator	Total	Global	53850	G=0.95671	A=0.04329	PRJNA507278	SAMN10492705
+Allele Frequency Aggregator	European	Sub	37230	G=0.95700	A=0.04300		SAMN10492695
+Allele Frequency Aggregator	African	Sub	5450	G=0.9706	A=0.0294		SAMN10492703
+Allele Frequency Aggregator	Other	Sub	5060	G=0.9579	A=0.0421		SAMN11605645
+Allele Frequency Aggregator	Latin American 2	Sub	4904	G=0.9468	A=0.0532		SAMN10492700
+Allele Frequency Aggregator	Latin American 1	Sub	574	G=0.974	A=0.026		SAMN10492699
+Allele Frequency Aggregator	Asian	Sub	470	G=0.860	A=0.140		SAMN10492704
+Allele Frequency Aggregator	South Asian	Sub	162	G=0.907	A=0.093		SAMN10492702
+ExAC	Global	Study-wide	27688	G=0.93127	A=0.06873	PRJEB8661	SAMN07490465
+ExAC	Europe	Sub	14444	G=0.95064	A=0.04936		
+ExAC	Asian	Sub	9898	G=0.8944	A=0.1056		
+ExAC	African	Sub	2032	G=0.9656	A=0.0344		
+ExAC	American	Sub	1094	G=0.9378	A=0.0622		
+ExAC	Other	Sub	220	G=0.968	A=0.032		SAMN07486028
+8.3KJPN	JAPANESE	Study-wide	16760	G=0.90459	A=0.09541	PRJNA678214	SAMN16789458
+GO Exome Sequencing Project	Global	Study-wide	12604	G=0.97001	A=0.02999	PRJNA192955	
+GO Exome Sequencing Project	European American	Sub	8340	G=0.9652	A=0.0348		
+GO Exome Sequencing Project	African American	Sub	4264	G=0.9794	A=0.0206		
+1000Genomes	Global	Study-wide	5008	G=0.9353	A=0.0647	PRJEB6930	SAMN07490465
+1000Genomes	African	Sub	1322	G=0.9750	A=0.0250		SAMN07486022
+1000Genomes	East Asian	Sub	1008	G=0.8780	A=0.1220		SAMN07486024
+1000Genomes	Europe	Sub	1006	G=0.9662	A=0.0338		SAMN07488239
+1000Genomes	South Asian	Sub	978	G=0.895	A=0.105		SAMN07486027
+1000Genomes	American	Sub	694	G=0.955	A=0.045		SAMN07488242
+Genetic variation in the Estonian population	Estonian	Study-wide	4480	G=0.9618	A=0.0382	PRJNA489787	
+The Avon Longitudinal Study of Parents and Children	PARENT AND CHILD COHORT	Study-wide	3854	G=0.9468	A=0.0532	PRJEB7217	
+UK 10K study - Twins	TWIN COHORT	Study-wide	3708	G=0.9498	A=0.0502	PRJEB7218	
+KOREAN population from KRGDB	KOREAN	Study-wide	2914	G=0.8991	A=0.1009	PRJNA589833	
+Korean Genome Project	KOREAN	Study-wide	1828	G=0.9010	A=0.0990	PRJNA609628	
+Northern Sweden	ACPOP	Study-wide	600	G=0.962	A=0.038	PPRJNA503394	SAMN10359154
+Medical Genome Project healthy controls from Spanish population	Spanish controls	Study-wide	534	G=0.998	A=0.002	PRJEB8705	SAMN13001620
+PharmGKB Aggregated	Global	Study-wide	480	G=0.956	A=0.044	PRJNA60817	SAMN13103781
+PharmGKB Aggregated	PA142236076	Sub	480	G=0.956	A=0.044		SAMN13097520
+HapMap	Global	Study-wide	330	G=0.936	A=0.064	PRJNA60817	SAMN10820145
+HapMap	African	Sub	120	G=0.950	A=0.050		SAMN10821181
+HapMap	American	Sub	120	G=0.942	A=0.058		SAMN10821182
+HapMap	Asian	Sub	90	G=0.91	A=0.09		SAMN10821184
+Qatari	Global	Study-wide	216	G=0.995	A=0.005	PRJNA288297	SAMN13019808
+SGDP_PRJ	Global	Study-wide	70	G=0.46	A=0.54	PRJNA586841	
+The Danish reference pan genome	Danish	Study-wide	40	G=0.88	A=0.12	PRJEB7725	SAMN13003120
+Siberian	Global	Study-wide	6	G=0.5	A=0.5	PRJNA267856	SAMN13113809
