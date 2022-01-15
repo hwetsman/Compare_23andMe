@@ -9,6 +9,8 @@ the 1000genomes project.
 Contributions and credits:
 Ensembl API documentation http://grch37.rest.ensembl.org/documentation/info/symbol_lookup
 Chris Vaccaro for findkeys https://github.com/ChrisVaccaro
+
+To do: allow user to enter gene symbol and provide feedback if bad symbol
 """
 import pandas as pd
 import requests
